@@ -1,0 +1,19 @@
+img{
+    width: 250px;
+    height: 250px;
+    
+}
+
+.retangulo{
+    max-width: 800px;
+    margin: auto;
+    border: 10px solid rgb(184, 182, 182);
+    padding: 10px;
+}
+h1,h2{
+    color: rgb(189,108,29);
+}
+
+hr{
+    color: rgb(221, 208, 208);
+}
