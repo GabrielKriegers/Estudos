@@ -6,8 +6,7 @@ for (var i = 1; i <= 24; i++) {
     totald = totald + deposito;
     var visor = total.toFixed(2);
     console.log("Mês: "+ i + " valor: " + visor);
-    // console.log(totald);
     total += deposito;
 }
 var visor = total.toFixed(2);
-console.log("Total acumulado foi: " + visor + " reais.")
+console.log("Total acumulado foi: " + visor + " reais.");
