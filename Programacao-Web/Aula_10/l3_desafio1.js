@@ -6,7 +6,7 @@ x = 0;
 y = 0;
 jogador = "O";
 
-while (vencedor != 'O' || vencedor != 'X'){
+while (vencedor != "O" || vencedor != "X"){
 
     for (let lin = 0; lin < 4; lin++) {
 
@@ -60,12 +60,7 @@ while (vencedor != 'O' || vencedor != 'X'){
     }
 
 
-    
-    
-    
-    
-    
-    Verificar();
+    vencedor = verificar();
     if (jogador == "O"){
         jogador = "X";
     }else{
@@ -78,10 +73,24 @@ while (vencedor != 'O' || vencedor != 'X'){
 
 } 
 
+function verificar(){
+    console.log("Tá chamando")
+      if (((matriz[0][0] == matriz[0][1] && matriz[0][1] == matriz[0][2]) || (matriz[1][0] == matriz[1][1] && matriz[1][1] == matriz[1][2]) || (matriz[2][0] == matriz[2][1] && matriz[2][1] == matriz[2][2]) || (matriz[0][0] == matriz[1][0] && matriz[1][0] == matriz[2][0]) || (matriz[0][1] == matriz[1][1] && matriz[1][1] == matriz[2][1]) || (matriz[0][2] == matriz[1][2] && matriz[1][2] == matriz[2][2]) ||(matriz[0][0] == matriz[1][1] && matriz[1][1] == matriz[2][2]) || (matriz[0][2] == matriz[1][1] && matriz[1][1] == matriz[2][0])) && (matriz[1][0] != '_' || matriz[0][1] != '_' || matriz[1][1] != '_' || matriz[1][2] != '_' || matriz[2][1] != '_')){
 
-
-function Verificar(){
-    if (matriz[0][0] == matriz[0][1] && matriz[0][1] == matriz[0][2] || matriz[1][0] == matriz[1][1] && matriz[1][1] == matriz[1][2] || matriz[2][0] == matriz[2][1] && matriz[2][1] == matriz[2][2] ||matriz[0][0] == matriz[1][0] && matriz[1][0] == matriz[2][0] || matriz[0][1] == matriz[1][1] && matriz[1][1] == matriz[2][1] || matriz[0][2] == matriz[1][2] && matriz[1][2] == matriz[2][2] ||matriz[0][0] == matriz[1][1] && matriz[1][1] == matriz[2][2] || matriz[0][2] == matriz[1][1] && matriz[1][1] == matriz[3][0]){
+        console.log("I");
         vencedor = jogador;
-    }
+        return vencedor;
+      }else{
+        console.log("Nenhum vencedor ainda!")
+      }
+      console.log("Tá passando pelo if")
 }
+
+console.log("O jogador que estava jogando com ", vencedor, "venceu!")
+
+// for (let i = 0; i < 3; i++){
+//     for (let j = 0; j < 3; j++){
+//         if (matriz[i][j] == )
+
+//     }
+// }
