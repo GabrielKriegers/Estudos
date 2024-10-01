@@ -12,6 +12,7 @@ public class Menu {
             }
             System.out.println(square(opcao));
         }
+        leitor.close();
     }
     
     public static int square(int n) {

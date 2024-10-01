@@ -1,12 +1,14 @@
 package PDM.Aula_04;
 
 public class Trabalhador {
+    public String nome;
     public int idade;
     public int tempot;
     public String sexo;
 
-    public Trabalhador(int idade, int tempot, String sexo){
+    public Trabalhador(String nome, int idade, int tempot, String sexo){
         System.out.println("Pessoa cadastrada!");
+        this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
         this.tempot = tempot;

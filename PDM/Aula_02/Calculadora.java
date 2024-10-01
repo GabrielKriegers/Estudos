@@ -51,6 +51,8 @@ public class Calculadora {
                 break;
             }
         }
+        leitor.close();
+        n.close();
     }
     public static Double somar(Double n1, Double n2) {
         return(n1 + n2);
@@ -71,6 +73,5 @@ public class Calculadora {
     public static Double quadrado (Double n1) {
         return (n1 * n1);
     }
-
 
 }
