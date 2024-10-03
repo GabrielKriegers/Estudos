@@ -5,7 +5,7 @@ for (let i = 0; i < 4; i++){
 
 soma();
 
-function soma(l) {
+function soma() {
   let soma = 0
   for (let i = 0; i < 4; i++){
     soma += lista[i]
