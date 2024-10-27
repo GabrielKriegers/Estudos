@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Origem e Destino</title>
+    <link href="eventos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+        <label for="n1">Número 1:</label>
+        <input type="text" id="n1">
+        <label for="n2">Número 2:</label>
+        <input type="text" id="n2">
+        <label for="result">Resultado:</label>
+        <input type="text" id="result">
+        <button id="botao" type="submit">Somar</button>
+    </div>
+    <script>
+        function somar(){
+            var n1 = document.getElementById("n1");
+            var n2 = document.getElementById("n2");
+            result.value = parseInt(n1.value) + parseInt(n2.value);
+        }
+
+        var botao = document.getElementById('botao');
+        botao.addEventListener('click', somar);
+    </script>
+</body>
+
+</html>

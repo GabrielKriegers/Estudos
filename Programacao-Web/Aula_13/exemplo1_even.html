@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="botao1">Não clique aqui</button>
+
+    <script>
+        function aviso(){
+            alert('Seu HD está sendo formatado!');
+        }
+        var botao = document.getElementById('botao1');
+        botao.addEventListener('click', aviso);
+    </script>
+</body>
+</html>

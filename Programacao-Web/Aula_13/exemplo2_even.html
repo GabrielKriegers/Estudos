@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Nome:" id="nome">
+    <button id="ok">OK!</button>
+
+    <script>
+        function cumprimentar(){
+            let nome = document.getElementById('nome');
+            alert(`Bom dia, ${nome.value}`);
+        }
+        var botao = document.getElementById('ok');
+        botao.addEventListener('mouseover', cumprimentar);
+
+    </script>
+</body>
+</html>
