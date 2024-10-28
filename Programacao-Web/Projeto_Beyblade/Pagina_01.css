@@ -484,6 +484,7 @@ h2{
 }
 
 .descricao{
+    position: relative;
     margin: 2px;
     border-radius: 30px;
     background-color: var(--color-grey1);
@@ -543,7 +544,7 @@ h2{
     font-weight: bold;
     font-size:medium;
     bottom: 0;
-    position: fixed;
+    position: absolute;
     padding-bottom: 2%;
     padding-left: 2px;
 }
@@ -564,12 +565,44 @@ h2{
 
 .qnt{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: var(--color-dark2);
     border-radius: 50px;
-    width: 200px;
-    color: white;   
+    width: 100px;
+    color: white;
+    padding-bottom: 4px;   
+}
+
+.input_qnt{
+    border: none;
+    background: none;
+    width: 20px;
+    color: inherit;
+    text-align: center;
+    outline: none;
+}
+
+.menos{
+    border: none;
+    background: none;
+    color: var(--color-grey1); 
+    cursor: pointer;
+}
+
+.menos:hover{
+    opacity: 0.7;
+}
+
+.mais{
+    border: none;
+    background: none;
+    color: var(--color-grey1);
+    cursor: pointer;
+}
+
+.mais:hover{
+    opacity: 0.7;
 }
 
 .caracteristicas{
@@ -612,7 +645,7 @@ ul{
     align-items: end;
     padding-bottom: 50px;
     bottom: 0;
-    position: fixed;
+    position: absolute;
 }
 
 .pagamento_titulo{
@@ -702,4 +735,159 @@ ul{
     display: flex;
     width: 100%;
     text-align: center;
+}
+
+/* Estilização da página de login */
+
+.retangulo{
+    display: flex;
+    width: 25%;
+    height: 70%;
+    border-radius: 40px;
+    background-color: var(--color-grey1);
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    position: relative;
+}
+
+.tela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+}
+
+.titulo_div{
+    position: absolute;
+    top: 0;
+    background-color: var(--color-dark1);
+    color: #ffffff;
+    padding: 15px 0 15px 0;
+    border-radius: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.senha{
+    margin: 50px 0 70px 0;
+    display: flex;
+    width: 90%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.usuario{
+    margin-top: 70px;
+    display: flex;
+    width: 90%;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.login_input{
+    height: 50px;
+    width: 100%;
+    border-radius: 40px;
+    background-color: var(--color-grey2);
+    border: none;
+    outline: none;
+    padding-left: 7px;
+    font-size: large;
+}
+
+.usuario_texto{
+    left: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.senha_texto{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.logar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.botao_logar{
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--color-grey2);
+    width: 200px;
+    height: 40px;
+}
+
+.nlogin{
+    position: absolute;
+    bottom: 0;
+}
+
+.cadastro_caminho{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #000000;
+}
+
+
+/* Pagina de Cadastro */
+
+.retangulo_cadastro{
+    display: flex;
+    width: 25%;
+    height: 90%;
+    border-radius: 40px;
+    background-color: var(--color-grey1);
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    position: relative;
+}
+
+.usuario_cadastro{
+    margin-top: 20px;
+    display: flex;
+    width: 90%;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.cadastrar{
+    bottom: 10px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro_input{
+    height: 40px;
+    width: 100%;
+    border-radius: 40px;
+    background-color: var(--color-grey2);
+    border: none;
+    outline: none;
+    padding-left: 7px;
+    font-size: 14px;
+}
+
+.cadastro_input::placeholder{
+    font-size: 13px;
+}
+
+.aviso_incompleto{
+    display: none;
+    font-size: 13px;
+    color: var(--color-red);
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuário</title>
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="Pagina_01.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet"> 
@@ -13,16 +13,51 @@
 
 </head>
     <body>
-        <div class="retangulo">
-            <h1 class="titulo">Cadastro de Usuário</h1>
-            <input type="text" placeholder="Nome">
-            <input type="text" placeholder="Nome de Usuário">
-            <input type="text" placeholder="Email">
-            <input type="text" placeholder="Senha">
-            <input type="text" placeholder="Data de Nascimento">
-            <input type="text" placeholder="CPF">
+        <div class="tela">
+            <div class="retangulo_cadastro">
+                <div class="titulo_div">
+                    <h1 class="titulo_h1">Cadastro de Usuário</h1>
+    
+                </div>
+                <div id= "aviso_cadastro" class="aviso_incompleto">
+                    <p id="aviso_texto" class="aviso_texto"></p>
+                </div>
+                <div class="usuario_cadastro">
+                    <p class="usuario_texto">Nome:</p>
+                    <input id="cadastro_input" class="cadastro_input" data-name="o nome" type="text" placeholder="Nome">
 
-            <p></p>
+                </div>
+                <div class="usuario_cadastro">
+                    <p class="usuario_texto">Nome de Usuário:</p>
+                    <input id="cadastro_input" class="cadastro_input" data-name="o nome de usuario" type="text" placeholder="Nome de Usuário">
+
+                </div>
+                <div class="usuario_cadastro">
+                    <p class="usuario_texto">Email:</p>
+                    <input id="cadastro_input" class="cadastro_input" data-name="o email" type="email" placeholder="Email">
+
+                </div>
+                <div class="usuario_cadastro">
+                    <p class="usuario_texto">Senha:</p>
+                    <input id="cadastro_input" class="cadastro_input" data-name="a senha" type="password" placeholder="Senha">
+
+                </div>
+                <div class="usuario_cadastro">
+                    <p class="usuario_texto">Data de Nascimento:</p>
+                    <input id="cadastro_input" class="cadastro_input" data-name="a data de nascimento" type="date" placeholder="Data de Nascimento">
+
+                </div>
+                <div class="usuario_cadastro">
+                    <p class="usuario_texto">CPF:</p> 
+                    <input id="cadastro_input" class="cadastro_input" data-name="o CPF" type="text" placeholder="CPF">
+
+                </div>
+                <div class="cadastrar">
+                    <button id= "botao" class="botao_logar">Cadastrar</button>
+                </div>
+
+            </div>
         </div>
     </body>
+    <script src="Aviso_cadastro.js"></script>
 </html>

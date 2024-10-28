@@ -6,7 +6,7 @@ const lsugestoes = [
     {nome:'Lendario' , preco:'R$532,99' , imagem: 'imagens/beyblade7.jpg'},
     {nome: 'Proton', preco:'R$542,99' , imagem: 'imagens/beyblade6.jpg'},
     {nome:'Haase' , preco:'R$823,99' , imagem: 'imagens/beyblade5.jpg'},
-    {nome:'Loreen' , preco:'R$282,99' , imagem: 'imagens/beyblade4.jpg'},
+    {nome:'Ioreen' , preco:'R$282,99' , imagem: 'imagens/beyblade4.jpg'},
     {nome:'Loooer' , preco:'R$534,99' , imagem: 'imagens/beyblade3.jpg'},
     {nome:'Jaaase' , preco:'R$131,99' , imagem: 'imagens/beyblade2.jpg'},
     {nome:'Mandragon' , preco:'R$101,99' , imagem: 'imagens/beyblade8.jpg'},
