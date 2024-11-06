@@ -52,14 +52,26 @@
                 <div class="produto_carrinho">
                     <img class="imagem" src="imagens/beyblade6.jpg" alt="">
                     <div class="div_nome">
-                        <p class="nome_produto">DragonGreen</p>
+                        <p class="nome_produto">DragonGreen gaafgkhgadfhg</p>
                     </div>
                     <div class="quantidade2">
-                        <p class="quantidade">Quantidade: 1</p>
+                        <p class="qnt_carrinho">
+                            <button id="menos_carrinho" class="menos">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z"/>
+                                </svg>
+                            </button>
+                            <input id="quantidade_de_itens_carrinho"  value="1" class="input_qnt"/>
+                            <button id="mais_carrinho" class="mais">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                                  </svg>    
+                            </button>
+                        </p>
                     </div>
                     <div class="preco2">
-                        <h2 class="desconto_produto">79,90</h2>
-                        <p class="preco_produto">69,90</p>
+                        <h2 id="preco_antigo" class="desconto_produto">79,90</h2>
+                        <p id="preco_unitario_carrinho" class="preco_produto">69,90</p>
                     </div>
                 </div>
                 <div class="produto_carrinho">
@@ -68,7 +80,19 @@
                         <p class="nome_produto">ScarFace</p>
                     </div>                    
                     <div class="quantidade2">
-                        <p class="quantidade">Quantidade: 2</p>
+                        <p class="qnt_carrinho">
+                            <button class="menos">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z"/>
+                                </svg>
+                            </button>
+                            <input value="1" class="input_qnt"/>
+                            <button class="mais">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                                  </svg>    
+                            </button>
+                        </p>
                     </div>
                     <div class="preco2">
                         <h2 class="desconto_produto">59,90</h2>
@@ -81,7 +105,19 @@
                         <p class="nome_produto">HelloKitty</p>
                     </div>
                     <div class="quantidade2">
-                        <p class="quantidade">Quantidade: 1</p>
+                        <p class="qnt_carrinho">
+                            <button class="menos">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z"/>
+                                </svg>
+                            </button>
+                            <input value="1" class="input_qnt"/>
+                            <button class="mais">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                                  </svg>    
+                            </button>
+                        </p>
                     </div>
                     <div class="preco2">
                         <h2 class="desconto_produto">29,90</h2>
@@ -112,11 +148,15 @@
                         <p class="preco4">140,70</p>
                     </div>
                     <div class="total">
-                        <p class="preco5">Total   R$</p>
+                        <p Valor_parcialclass="preco5">Total   R$</p>
                         <h1 class="preco6">153,00</h1>
                     </div>
                 </div>
             </div>
         </div>
     </body>
+    <script src="Valores_pagina_02.js"></script>
+    <script src="Valor_funcoes.js" ></script>
+    <script src="Carrinho_funcoes.js"></script>
 </html>
+
