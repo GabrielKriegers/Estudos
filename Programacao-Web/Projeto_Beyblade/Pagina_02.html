@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Beyblade | Carrinho</title>
-        <link rel="shortcut icon" href="BBB.jpeg">
+        <link rel="shortcut icon" href="imagens/BBB.jpeg">
         <link rel="stylesheet" href="Pagina_01.css">
     </head>
     <body>
@@ -42,7 +42,7 @@
                     </div>
                     
                     <div class="btn_entrar">
-                        <a href="Pagina_02.html" class="active">Entrar</a>
+                        <a href="Login.html" class="active">Entrar</a>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                 <div class="produto_carrinho">
                     <img class="imagem" src="imagens/beyblade6.jpg" alt="">
                     <div class="div_nome">
-                        <p class="nome_produto">DragonGreen gaafgkhgadfhg</p>
+                        <p class="nome_produto">DragonGreen</p>
                     </div>
                     <div class="quantidade2">
                         <p class="qnt_carrinho">
@@ -70,8 +70,8 @@
                         </p>
                     </div>
                     <div class="preco2">
-                        <h2 id="preco_antigo" class="desconto_produto">79,90</h2>
-                        <p id="preco_unitario_carrinho" class="preco_produto">69,90</p>
+                        <h2 id="preco_antigo" class="desconto_produto">79.90</h2>
+                        <p id="preco_unitario_carrinho1" class="preco_produto">69.90</p>
                     </div>
                 </div>
                 <div class="produto_carrinho">
@@ -95,8 +95,8 @@
                         </p>
                     </div>
                     <div class="preco2">
-                        <h2 class="desconto_produto">59,90</h2>
-                        <p class="preco_produto">49,90</p>
+                        <h2 class="desconto_produto">59.90</h2>
+                        <p id="preco_unitario_carrinho2" class="preco_produto">49.90</p>
                     </div>                
                 </div>
                 <div class="produto_carrinho">
@@ -120,8 +120,8 @@
                         </p>
                     </div>
                     <div class="preco2">
-                        <h2 class="desconto_produto">29,90</h2>
-                        <p class="preco_produto">20,90</p>
+                        <h2 class="desconto_produto">29.90</h2>
+                        <p id="preco_unitario_carrinho3" class="preco_produto">20.90</p>
                     </div>
                 </div>
             </div>
@@ -134,29 +134,37 @@
                         <p>CEP:</p>
                     </div>
                     <div class="pesquisa_cep">
-                        <input type="text" class="search-txt" placeholder="00000-000">
+                        <input id="input_cep" type="text" class="search-txt" placeholder="00000-000">
                     </div>
                     <div class="preco_frete">
                         <p class="preco_palavra">Preço do Frete:</p>
-                        <p class="preco_numerico">12,30</p>
+                        <p id="preco_frete" class="preco_numerico">0.00</p>
                     </div>
                     <div class="calculo_total">
-                        <h2>Cálculo da Compra</h2>
+                        <h2>Cupom</h2>
                     </div>
                     <div class="produto_frete">
                         <p class="preco3">Preço dos Produtos:</p>
-                        <p class="preco4">140,70</p>
+                        <p id="preco_produtos" class="preco4">140,70</p>
+                    </div>
+                    <div class="pesquisa_cep">
+                        <input id="input_cupom" type="text" class="search-txt" placeholder="Cupom">
+                    </div>
+                    <div class="espacinho">
+                        <p class="preco3">Preço descontado:</p>
+                        <p id="preco_descontado" class="preco4">0.00</p>
                     </div>
                     <div class="total">
                         <p Valor_parcialclass="preco5">Total   R$</p>
-                        <h1 class="preco6">153,00</h1>
+                        <h1 id="preco_total" class="preco6">153,00</h1>
                     </div>
                 </div>
             </div>
         </div>
     </body>
-    <script src="Valores_pagina_02.js"></script>
-    <script src="Valor_funcoes.js" ></script>
-    <script src="Carrinho_funcoes.js"></script>
+    <script src="JS/Valores_pagina_02.js"></script>
+    <script src="JS/Carrinho_funcoes.js"></script>
+    <script src="JS/Valor_funcoes.js" ></script>
 </html>
-
+    
+    

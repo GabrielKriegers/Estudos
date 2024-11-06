@@ -14,12 +14,15 @@ function diminuir(){
 
 function atualizar_preco(){
     let quantidade = parseInt(qnt.value);
-    let total = quantidade * precoU;
-    preco.textContent = total.toFixed(2);
+    let total = quantidade * precoU1;
+    preco1.textContent = total.toFixed(2);
     atualizar_preco_antigo();
+    pegar_valores();
 }
 
 btn_mais.addEventListener('click', somar);
+
+
 btn_menos.addEventListener('click', diminuir);
 qnt.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
