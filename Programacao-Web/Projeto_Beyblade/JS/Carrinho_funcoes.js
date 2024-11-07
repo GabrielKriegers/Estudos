@@ -36,6 +36,8 @@ function aplicar_cupom(){
         total = total * 0.9;
         preco_descontado.textContent = (total * 0.1).toFixed(2);
         
+    }else{
+        preco_descontado.textContent = '0.00';
     }
 
     preco_produtos.textContent = produtos.toFixed(2);
