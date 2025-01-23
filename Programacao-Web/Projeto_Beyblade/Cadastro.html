@@ -13,7 +13,7 @@
 
 </head>
     <body>
-        <div class="tela">
+        <form action="cadastrar.php" class="tela" method="post">
             <div class="retangulo_cadastro">
                 <div class="titulo_div">
                     <h1 class="titulo_h1">Cadastro de Usuário</h1>
@@ -24,40 +24,40 @@
                 </div>
                 <div class="usuario_cadastro">
                     <p class="usuario_texto">Nome:</p>
-                    <input id="cadastro_input" class="cadastro_input" data-name="o nome" type="text" placeholder="Nome">
+                    <input id="cadastro_input" class="cadastro_input" name="nome" type="text" placeholder="Nome">
 
                 </div>
                 <div class="usuario_cadastro">
                     <p class="usuario_texto">Nome de Usuário:</p>
-                    <input id="cadastro_input" class="cadastro_input" data-name="o nome de usuario" type="text" placeholder="Nome de Usuário">
+                    <input id="cadastro_input" class="cadastro_input" name="nome_user" type="text" placeholder="Nome de Usuário">
 
                 </div>
                 <div class="usuario_cadastro">
                     <p class="usuario_texto">Email:</p>
-                    <input id="cadastro_input" class="cadastro_input" data-name="o email" type="email" placeholder="Email">
+                    <input id="cadastro_input" class="cadastro_input" name="email" type="email" placeholder="Email">
 
                 </div>
                 <div class="usuario_cadastro">
                     <p class="usuario_texto">Senha:</p>
-                    <input id="cadastro_input" class="cadastro_input" data-name="a senha" type="password" placeholder="Senha">
+                    <input id="cadastro_input" class="cadastro_input" name="senha" type="password" placeholder="Senha">
 
                 </div>
                 <div class="usuario_cadastro">
                     <p class="usuario_texto">Data de Nascimento:</p>
-                    <input id="cadastro_input" class="cadastro_input" data-name="a data de nascimento" type="date" placeholder="Data de Nascimento">
+                    <input id="cadastro_input" class="cadastro_input" name="data_nasc" type="date" placeholder="Data de Nascimento">
 
                 </div>
                 <div class="usuario_cadastro">
                     <p class="usuario_texto">CPF:</p> 
-                    <input id="cadastro_input" class="cadastro_input" data-name="o CPF" type="text" placeholder="CPF">
+                    <input id="cadastro_input" class="cadastro_input" name="cpf" type="text" placeholder="CPF">
 
                 </div>
                 <div class="cadastrar">
-                    <button id= "botao" class="botao_logar">Cadastrar</button>
+                    <button type="submit" id= "botao" class="botao_logar">Cadastrar</button>
                 </div>
 
             </div>
-        </div>
+        </form>
     </body>
     <script src="JS/Aviso_cadastro.js"></script>
 </html>
