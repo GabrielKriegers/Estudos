@@ -13,7 +13,7 @@
 </head>
 
     <body>
-        <div class="tela">
+        <form action="login.php" method="post" class="tela">
             <div class="retangulo">
                 <div class="titulo_div">
                     <h1 class="titulo_h1">Login de Usuário</h1>
@@ -24,12 +24,12 @@
                 </div>
                 <div class="usuario"> 
                     <p class="usuario_texto">Usuário:</p>
-                    <input id="cadastro_input" class="login_input" type="text" placeholder="Usuário">
+                    <input name="nome_user" id="cadastro_input" class="login_input" type="text" placeholder="Usuário">
     
                 </div>
                 <div class="senha">
                     <p class="senha_texto">Senha:</p>
-                    <input id="cadastro_input" class="login_input" type="password" placeholder="Senha">
+                    <input name="senha" id="cadastro_input" class="login_input" type="password" placeholder="Senha">
     
                 </div>
                 <div class="logar">
@@ -40,7 +40,7 @@
     
                 </div>
             </div>
-        </div>
+        </form>
     </body>
     <script src="JS/Aviso_login.js"></script>
 </html>
