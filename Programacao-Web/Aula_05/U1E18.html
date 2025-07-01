@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro para o JIFSC</title>
+        </head>
+    <body>
+        <h2>Cadastro de estudantes para o JIFSC</h2>
+        <form action="#">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" required minlength="11" maxlength="11">
+            </div>
+            <div>
+                <label for="data">Data de Nascimento</label>
+                <input type="date" name="data" id="data">
+            </div>
+            <div>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+            <div>
+                <label for="email">E-maiil:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="curso">Nome do Curso:</label>
+                <input type="text" name="curso" id="curso">
+            </div>
+            <div>
+                <label>Modalidade:</label>
+                <input type="radio" name="modalidade" id="modalidade">
+                <label for="modalidade">Individual</label>
+                href="#"     <input type="radio" name="modalidade" id="modalidade2">
+                <label for="modalidade2">Coletiva</label>
+            </div>
+            <div>
+                <input type="checkbox" name="ajuda" id="ajuda" checked>
+                <label for="ajuda">Ajuda de Custo</label>
+            </div>
+            <div class="button">
+                <button type="submit">Cadastrar </button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+        <p>Paragráfo azul.</p>
+    </body>
+</html>

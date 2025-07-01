@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link href="eventos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero" />
+        <br />
+        <label for="resultado">Resultado:</label>
+        <input type="text" id="resultado" name="resultado" />
+        <br />
+        <button id="botao">
+            Multiplica por 2
+        </button>
+    </div>
+
+    <script>
+        function dobro(){
+            var n = document.getElementById('numero');
+            resultado.value = n.value * 2;
+        }
+        var botao = document.getElementById('botao');
+        botao.addEventListener('click', dobro);
+
+
+    </script>
+</body>
+
+</html>

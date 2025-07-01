@@ -1,0 +1,22 @@
+*{text-align: center;}
+h1{
+    color: red;
+    font-size: 50px;
+    font-style: initial;
+}
+
+h2{
+    color: darkgoldenrod;
+    font-size: medium;
+    font-style: italic;
+}
+h3{
+    color: crimson;
+    font-size: small;
+    font-style: unset;
+}
+h4{
+    color: bisque;
+    font-size: smaller;
+    font-style: oblique;
+}
